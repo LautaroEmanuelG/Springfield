@@ -1,0 +1,26 @@
+
+.btn-otro{
+    display:none;
+    position: absolute;
+    z-index: 1000;
+    top: 0.7rem;
+    right: 1rem;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-weight: 900;
+    cursor: pointer;
+    color:whitesmoke;
+    background: none;
+    transition: color 0.3s ease-in-out,
+                transform 0.2s ease-in-out;
+    background-color: rgb(47, 154, 128);
+    padding: 0.1rem 1rem;
+    height: 2.5rem;
+    border-radius: 7px;
+}
+
+.btn-otro:hover{
+    color: rgb(249, 233, 2);
+    transform: scale(1.1);
+}

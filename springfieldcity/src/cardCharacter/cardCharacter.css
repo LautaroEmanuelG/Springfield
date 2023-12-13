@@ -1,0 +1,52 @@
+.card{
+    position:relative;
+    width:250px;
+    height: 400px;
+    padding: 22px;
+    background-color: rgba(198, 45, 45, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: whitesmoke;
+    border:whitesmoke 10px solid;
+    border-radius: 20px;
+    font-size: 1rem;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.801);
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    background-color: rgba(198, 45, 45, 0.85);
+}
+.charList__nombre{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    margin-top:10px;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+}
+.numT{
+    position:absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: start;
+    top: -5px;
+    left: 5px;
+}
+.numB{
+    position:absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: end;
+    bottom: -5px;
+    right: 5px;
+    transform: rotate(180deg);
+}

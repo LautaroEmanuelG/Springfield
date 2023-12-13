@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: rgb(249, 233, 2);
+  min-width:100%;
+  border-top: 2px solid #2f2f2f;
+  padding: 0 10px;
+}
+.title{
+  font-size: 5rem;
+  font-weight: bold;
+}
+.cardList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin:30px auto;
+}
+.btn-count{
+  display: flex;
+  margin: 30px 0 0 0;
+  gap: 1rem;
+}
+.btn-handler{
+  border: none;
+  width:200px;
+  height:40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color:whitesmoke;
+  border:4px solid whitesmoke;
+  border-radius: 5px;
+  background-color: rgba(198, 45, 45, 0.9);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.801);
+  transition: transform 0.2s ease-in-out;
+}
+.btn-handler:hover{
+  background-color: rgba(198, 45, 45, 0.2);
+  transform: scale(1.1);
+  color: whitesmoke;
+}
