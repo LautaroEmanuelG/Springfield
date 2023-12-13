@@ -20,6 +20,9 @@
     transition: transform 0.2s ease-in-out;
     background-color: rgba(198, 45, 45, 0.85);
 }
+.charList__ocupacion{
+    text-align: center;
+}
 .charList__nombre{
     font-size: 1.5rem;
     font-weight: bold;

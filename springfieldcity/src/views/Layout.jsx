@@ -29,12 +29,14 @@ const Layout = () => {
             type="text"
             value={textoBusqueda}
             onChange={handleChangeTexto}
-            placeholder="Ingrese su búsqueda"
+            placeholder="Buscar Personaje"
           />
           <Link
-          style={{ textDecoration: "none", color: "#fff" }}
-          to={`/Buscar/${textoBusqueda}`} 
-        ><button className="btn-enviar">🔍</button></Link>
+            style={{ textDecoration: "none", color: "#fff" }}
+            to={`/Buscar/${textoBusqueda}`}
+          >
+            <button className="btn-enviar">🔍</button>
+          </Link>
         </div>
         <Link
           style={{ textDecoration: "none", color: "#fff" }}

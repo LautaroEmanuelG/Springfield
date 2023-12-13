@@ -10,6 +10,7 @@
   align-items: center;
   font-size: 2rem;
   background-color: rgb(249, 233, 2);
+  min-height: 92vh;
   min-width:100%;
   border-top: 2px solid #2f2f2f;
   padding: 0 10px;
@@ -48,4 +49,25 @@
   background-color: rgba(198, 45, 45, 0.2);
   transform: scale(1.1);
   color: whitesmoke;
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Estilo para la pista (track) de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Estilo para el pulgar (thumb) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: rgb(205, 73, 38); 
+  border-radius: 5px;
+}
+
+/* Estilo para el pulgar (thumb) de la barra de desplazamiento cuando se pasa el mouse por encima */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 139, 167); 
 }

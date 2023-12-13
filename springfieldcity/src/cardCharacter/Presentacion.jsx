@@ -3,10 +3,10 @@ import "./presentacion.css";
 
 export const Presentacion = ({ currentCharacter }) => {
   return (
-    <div className="presentacion">
+    <>
       {currentCharacter && (
-        <>
-          <div className="contenedor">
+        <div className="presentacion">
+          <aside className="contenedor-img">
             <img
               className="img"
               src={currentCharacter.Imagen}
@@ -16,22 +16,20 @@ export const Presentacion = ({ currentCharacter }) => {
               <h1 className="nombre">{currentCharacter.Nombre}</h1>
               <p className="ocupacion">{currentCharacter.Ocupacion}</p>
             </div>
-          </div>
-          <div className="contenedor-lore">
+          </aside>
+          <aside className="contenedor-lore">
             <p className="historia">
               <strong>Historia:</strong> {currentCharacter.Historia}
             </p>
-            <span className="datos">
-              <p className="genero">
-                <strong>{currentCharacter.Genero}</strong>
-              </p>
-              <p className="estado">
-                <strong>{currentCharacter.Estado}</strong>
-              </p>
-            </span>
-          </div>
-        </>
+            <p className="genero">
+              <strong>Género: </strong>{currentCharacter.Genero}
+            </p>
+            <p className="estado">
+              <strong>Estado: </strong>{currentCharacter.Estado}
+            </p>
+          </aside>
+        </div>
       )}
-    </div>
+    </>
   );
 };
