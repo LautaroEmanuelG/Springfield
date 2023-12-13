@@ -34,7 +34,7 @@ function App() {
       <ul className="cardList">
         {characters.map((character) => {
           return (
-            <Link style={{ textDecoration: 'none', color: '#fff' }} to={`/character/${character.Nombre}`} key={character._id}>
+            <Link style={{ textDecoration: 'none', color: '#fff' }} to={`/Character/${character.Nombre}`} key={character._id}>
               <CardCharacter key={character._id} character={character} />
             </Link>
           )
