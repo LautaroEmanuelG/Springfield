@@ -41,6 +41,10 @@ function App() {
           )
         })}
       </ul>
+      <section className="btn-count">
+        <button className="btn-handler" onClick={handlerResta}>Página Anterior</button>
+        <button className="btn-handler" onClick={handlerSuma}>Página Siguiente</button>
+      </section>
     </div>
   );
 }
