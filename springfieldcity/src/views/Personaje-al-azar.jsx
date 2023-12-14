@@ -25,12 +25,7 @@ const Personaje = () => {
   };
 
   return (
-    <div className="contenedor__presentacion">
-      <button className="btn-otro" onClick={handlerRandom}>
-      Personaje al azar
-      </button>
       <Presentacion key={personaje._id} currentCharacter={personaje} />
-    </div>
   );
 };
 

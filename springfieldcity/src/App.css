@@ -18,6 +18,8 @@
 .title{
   font-size: 5rem;
   font-weight: bold;
+  text-align: center;
+  margin:0 auto;
 }
 .cardList{
   display: flex;
@@ -31,6 +33,7 @@
   display: flex;
   margin: 30px 0 0 0;
   gap: 1rem;
+  margin:0 auto;
 }
 .btn-handler{
   border: none;

@@ -27,7 +27,7 @@ const Layout = () => {
   return (
     <>
       <header>
-        <Link style={{ textDecoration: "none", color: "#fff" }} to="/">
+        <Link className="home" style={{ textDecoration: "none", color: "#fff" }} to="/">
           <button>Home</button>
         </Link>
         <form className="buscar" onSubmit={handleEnviarBusqueda}>
@@ -42,11 +42,11 @@ const Layout = () => {
             🔍
           </button>
         </form>
-        <Link
+        <Link className="random"
           style={{ textDecoration: "none", color: "#fff" }}
           to="/Personaje-al-azar/"
         >
-          <button onClick={handleRandomButtonClick}>Personaje al azar</button>
+          <button onClick={handleRandomButtonClick}>Barajar</button>
         </Link>
       </header>
       <main key={randomKey}>

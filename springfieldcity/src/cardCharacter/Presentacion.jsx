@@ -1,5 +1,6 @@
 import React from "react";
 import "./presentacion.css";
+import "../mediaQueris.css"
 
 export const Presentacion = ({ currentCharacter }) => {
   return (

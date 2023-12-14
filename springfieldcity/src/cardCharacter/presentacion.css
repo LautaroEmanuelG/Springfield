@@ -12,37 +12,27 @@
     background-size: cover;
     border-top: 2px solid #2f2f2f;
     min-height: 92vh;
-    overflow: hidden;
     width: 100%;
-    background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/Springfield11.png);
     background-size: cover;
 }
 
-.contenedor {
-    flex-grow: 100;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 400px;
-}
 .img {
     position: absolute;
-    left: 50%;
-    transform: translateX(-140%);
     top: 5%;
+    left: 10%;
     z-index: 2;
-    width:300px;
+    height: 80vh;
 }
 
-.titulos{
+.titulos {
     position: absolute;
+    width: 20vw;
     max-width: 90vh;
     z-index: 500;
-    left: 50%;
-    transform: translateX(-100%);
-    bottom: 20%;
+    right: 80%;
+    transform: translateX(100%);
+    bottom: 10%;
     text-align: center;
 }
 
@@ -68,6 +58,7 @@
     border-radius: 20px;
     border: 3px solid #2f2f2f;
 }
+
 .historia,
 .genero,
 .estado {
@@ -78,7 +69,9 @@
     margin: 5px auto;
 
 }
-.genero,.estado{
+
+.genero,
+.estado {
     max-width: 250px;
     text-align: center;
 }

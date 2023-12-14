@@ -1,0 +1,66 @@
+@media screen and (max-width: 810px) {
+    header {
+        height: 100px;
+        width: 100%;
+        display: flex;
+    }
+
+    main{
+        overflow:visible;
+    }
+
+    .home button {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .buscar {
+        transform: scale(0.8);
+    }
+
+    .random button {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+
+    .btn-count {
+        transform: scale(0.7);
+        margin: 10px 0 0 0;
+    }
+
+    .btn-handler {
+        width: 200px;
+        height: 50px;
+    }
+
+    header>.presentacion {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+    }
+
+    .presentacion>.contenedor-img>.titulos {
+        position: absolute;
+        width: 80%;
+        max-width: 90vh;
+        z-index: 500;
+        right: 90%;
+        transform: translateX(100%);
+        bottom: 30%;
+        text-align: center;
+    }
+
+    .presentacion>.contenedor-lore {
+        width: 100%;
+        right: 0%;
+        top: 80%;
+        z-index: 500;
+        overflow: visible;
+    }
+}
