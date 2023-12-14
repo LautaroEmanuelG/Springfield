@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter, Route , Routes} from 'react-router-dom';
+import { BrowserRouter, Navigate, Route , Routes} from 'react-router-dom';
 import Layout from './views/Layout';
 import Character from './views/Character';
 import Personaje from './views/Personaje-al-azar';
@@ -19,7 +19,7 @@ root.render(
           <Route path="Buscar/:nombreCharacters" element={<SearchPresentacion />} />
           <Route path="Personaje-al-azar" element={<Personaje/>} />
         </Route>
-        {/* <Route path='*' element={<Navigate replace to="/"/>} /> */}
+        <Route path='*' element={<Navigate replace to="/"/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

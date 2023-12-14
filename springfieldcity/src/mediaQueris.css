@@ -63,4 +63,8 @@
         z-index: 500;
         overflow: visible;
     }
+    
+    .footer > .agradecimientos{
+        display: none;
+    }
 }

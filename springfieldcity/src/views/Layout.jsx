@@ -53,6 +53,22 @@ const Layout = () => {
         {/* Usando key para forzar el re-renderizado */}
         <Outlet />
       </main>
+      <footer className="caja footer">
+        <div className="footer-column">
+            <h3>Contacto</h3>
+            <a href="https://github.com/LautaroEmanuelG" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/lautaro-gonzalez-93bb0728a/" target="_blank">LinkedIn</a>
+            <a href="" target="_blank">Portfolio</a>
+        </div>
+        <div className="footer-column">
+            <h3>Derechos de autor</h3>
+            <p>&copy; 2023 LautaroEmanuelG <br/>Todos los derechos reservados.</p>
+        </div>
+        <div className="footer-column agradecimientos">
+            <h3>Agradecimientos</h3>
+            <p>Agradezcimientos a mis Profesores de: <br/>React, JavaScript, Java y Python por su dedicación y apoyo.</p>
+        </div>
+    </footer>
     </>
   );
 };
