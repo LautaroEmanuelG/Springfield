@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, Outlet, useNavigate  } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import "./layout.css";
 
 const Layout = () => {
@@ -27,7 +27,11 @@ const Layout = () => {
   return (
     <>
       <header>
-        <Link className="home" style={{ textDecoration: "none", color: "#fff" }} to="/">
+        <Link
+          className="home"
+          style={{ textDecoration: "none", color: "#fff" }}
+          to="/"
+        >
           <button>Home</button>
         </Link>
         <form className="buscar" onSubmit={handleEnviarBusqueda}>
@@ -42,7 +46,8 @@ const Layout = () => {
             🔍
           </button>
         </form>
-        <Link className="random"
+        <Link
+          className="random"
           style={{ textDecoration: "none", color: "#fff" }}
           to="/Personaje-al-azar/"
         >
@@ -55,20 +60,35 @@ const Layout = () => {
       </main>
       <footer className="caja footer">
         <div className="footer-column">
-            <h3>Contacto</h3>
-            <a href="https://github.com/LautaroEmanuelG" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/lautaro-gonzalez-93bb0728a/" target="_blank">LinkedIn</a>
-            <a href="" target="_blank">Portfolio</a>
+          <h3>Contacto</h3>
+          <a href="https://github.com/LautaroEmanuelG" target="_blank">
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/lautaro-gonzalez-93bb0728a/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a href="" target="_blank">
+            Portfolio
+          </a>
         </div>
         <div className="footer-column">
-            <h3>Derechos de autor</h3>
-            <p>&copy; 2023 LautaroEmanuelG <br/>Todos los derechos reservados.</p>
+          <h3>Derechos de autor</h3>
+          <p>
+            &copy; 2023 LautaroEmanuelG <br />
+            Todos los derechos reservados.
+          </p>
         </div>
         <div className="footer-column agradecimientos">
-            <h3>Agradecimientos</h3>
-            <p>Agradezcimientos a mis Profesores de: <br/>React, JavaScript, Java y Python por su dedicación y apoyo.</p>
+          <h3>Agradecimientos</h3>
+          <p>
+            Agradezcimientos a mis Profesores de: <br />
+            React, JavaScript, Java y Python por su dedicación y apoyo.
+          </p>
         </div>
-    </footer>
+      </footer>
     </>
   );
 };
